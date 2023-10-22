@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sujal-Fullstack</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: wheat;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 2rem;
+      }
+
+      .firstSection {
+        display: flex;
+        height: 90vh;
+        
+        margin: 70px 0;
+      }
+      .firstSection div {
+        width: 40%;
+        
+      }
+      .leftmostSection{
+        width: 10%;
+      }
+      .leftSection {
+        font-size: 2rem;
+        justify-content: space-around;
+        margin-left: 100px;
+        width: 40%;
+
+      }
+      .square{
+        border-radius: 50%;
+        left: px;
+      }
+      .star{
+         left: 100px;
+         top: 40vx;
+      }
+      .Text .btn{
+        padding: 8px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 4px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .Text{
+        justify-content: space-around;
+        font-size: 2rem;
+        
+        
+
+      }
+      .text3{
+        font-size: 1.9rem;
+        margin-left: 100px;
+        left: -80vx;
+      }
+      .text4{
+        font-size: 1.9rem;
+       
+      }
+     
+      .purple {
+        color: blueviolet;
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: blueviolet;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 100px 0;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 120px;
+      }
+      .thirdSection{
+        align-items: center;
+        justify-content: space-around;
+        height: 5vx;
+        margin-left: 500px;
+      }
+      .fourthSection{
+        align-items: center;
+        justify-content: space-around;
+        
+        margin-left: 500px;
+      }
+      .icons{
+        
+        left: 100vx;
+      }
+      .image-top{
+         width: 100px;
+         position: relative;
+         top: -100px;
+         left: -50px;
+      }
+      .image-left{
+        width: 120px;
+         position: relative;
+         top: -65px;
+         left: -50px;
+      }
+      .image-right{
+        width: 80px;
+         position: relative;
+         top: -90px;
+         left: -50px;
+         
+      }
+      .icons1{
+        width: 90px;
+         position: relative;
+         top: -65px;
+         left: -10px;
+         
+      }
+      .icons2{
+        width: 70px;
+         position: relative;
+         top: -50px;
+         left: -20px;
+      }
+      .icons3{
+        width: 70px;
+         position: relative;
+         top: -53px;
+         left: -10px;
+      }
+      .icons4{
+        width: 70px;
+         position: relative;
+         top: -60px;
+         left: -10px;
+      }
+      
+      .vertical-title {
+        position: relative;
+        top: 0px;
+        width: 150px;
+        font-size: 16px;
+      }
+      .fourthSection{
+        max-width: 80vw;
+        height: 80vh;
+      }
+      .vertical-3 {
+        position: relative;
+        top: 50px;
+        width: 150px;
+        font-size: 16px;
+      }
+      .vertical-4 {
+        position: relative;
+        top: 30px;
+        width: 150px;
+        font-size: 16px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 10px;
+        color: gray;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-desc3 {
+        position: relative;
+        top: 58px;
+        color: gray;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-desc4 {
+        position: relative;
+        top: 40px;
+        color: gray;
+        width: 150px;
+        font-size: 14px;
+      }
+      .infotext{
+        color: gray;
+        font-size: 20px;
+      }
+      .ludo{
+        position: relative;
+         top: 100px;
+         left: -300px;
+      }
+      .cc{
+        position: relative;
+        top: 100px;
+         left: 10px;
+      }
+      footer{
+        background-color: #0e0e1a;
+       
+      }
+      .footer{
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+       
+
+      }
+      .footer ul{
+        list-style: none;
+      }
+      .footer >div{
+        width: 223px;
+
+      }
+      footer .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+      .thank{
+        width: 300px;
+         position: relative;
+         top: -65px;
+         left: -50px;
+
+      }
+      .Thank1{
+        font-size: 2.5rem;
+        margin-left: 600px;
+      }
+      .Thank2{
+        font-size: 1.5rem;
+        margin-left: 570px;
+      }
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Sujal's Portfolio</div>
+        <div class="right"></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="thirdSection">Contact</a></li>
+          <li><a href="/">Skills</a></li>
+         
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+
+        
+       
+        <div class="leftSection">
+          <img class="square" src="sujal.jpg" alt="" width="300px"/>
+          <br><br>
+          
+          <ul>
+            <li>HackerRank
+            <img class="star" src="star.webp" alt="" width="100px"/>
+          </li>
+            <li>LeetCode- 100Q</li>
+            <li>Codechef
+              <img class="Codechef" src="codechef.png" alt="" width="50px"/>
+               </li>
+            <li>Coding Ninja 
+              <img class="Coding Ninja" src="codingninja.png" alt="" width="50px"/>
+            </li>
+        </ul>
+          
+          </div>
+          <div class="Text">
+          Hi, My name is <span class="purple">Sujal Tagalpallewar</span>
+          <div>I am passionate</div>
+          <span id="element"></span>
+         
+        <div class="buttons">
+            <button class="btn">Resume</button>
+            <button class="btn">GitHub</button>
+        </div>
+        <br><br>
+        
+        <div class="Info">My Info:</div>
+       
+       <p style="color: gray;"> Always ready to explore and currently diving to well of Entrepreneur</p>
+        </div>
+          </div>
+        </div>
+       
+          
+          
+        </div>
+      </section>
+      <br>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray"> Learning...</span>
+        <h1>Technical Skills</h1>
+
+
+        <div class="box">
+          <div class="vertical">
+               <img class="image-top" src="fe.png" alt="" >
+              
+               <div class="vertical-title">
+                    FrontEnd Developer
+                </div>
+               <div class="vertical-desc">
+                 HTML
+                 CSS
+                 Javascript
+               </div>
+          </div>
+          <div class="vertical">
+          <img class="image-top" src="be.png" alt="" >
+          <div class="vertical-title">
+           Backend Developer
+          </div>
+          <div class="vertical-desc">
+            Spring Boot Hibernate JSON
+            Spring
+                  
+          </div>
+          </div>
+          
+          <div class="vertical">
+            <img class="image-left" src="plb.png" alt="" >
+          <div class="vertical-3">
+           Programming Languages
+          </div>
+          <div class="vertical-desc3">
+            Java
+            Python
+            C
+            C++
+                  
+          </div>
+        </div>
+         
+           
+          <div class="vertical">
+            <img class="image-right" src="datab.png" alt="" >
+            <div class="vertical-4">
+             Databases
+            </div>
+            <div class="vertical-desc4">
+              MySql
+              Oracle
+                    
+            </div>
+          </div>
+
+          <div class="vertical"></div>
+
+        </div>
+      </section>
+    </section>
+    
+    
+
+
+      </section>
+      <hr />
+        <section class="thirdSection">
+         
+          <div class="text3">
+            Contacts
+          </div>
+          <br>
+          <br>
+          <br>
+           <img class="icons1" src="wpb.png" alt="" width="60px">
+           <img class="icons2" src="libb.png" alt="" width="60px">
+           <img class="icons3" src="instagram.png" alt="" width="40px">
+           <img class="icons4" src="twitter.png" alt="" width="40px">
+
+          
+  
+       
+
+      </section>
+      <hr>
+    
+      <div class="Thank1">Thank You</div>
+      <div class="Thank2">for visting my Portfolio..</div>
+<br><br><br><br>
+    </main>
+    <footer>
+        
+        <div class="footer">
+            <div class="'footer-first">
+                <h3>Sujal's Portfolio</h3>
+            </div>    
+
+            
+            <div class="'footer-second">
+                <ul>
+                    <li>Location:                       Pune</li>
+                    <li>Email-sujalt@gmail.com</li>
+                    <li>Contact:8767076070</li>
+                    <li>College-VIIT</li>
+                </ul>
+            </div>    
+            <div class="'footer-third">
+              <ul>
+                  <li>LinkedIn Id-SujalTagalpallewar</li>
+                  <li>Instagram-sujaltagalpallewar</li>
+                  <li></li>
+                  <li></li>
+              </ul>
+          </div>   
+         
+        </div>
+      
+           
+            <div class="footer-rights">
+               Copyright &#169; sujal'sportfolio.com | All rights reserved
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Entrepreneur",
+          "Student",
+          "Traveller",
+          "FullStack Developer",
+        ],
+        typeSpeed: 80,
+      });
+    </script>
+  </body>
+</html>
